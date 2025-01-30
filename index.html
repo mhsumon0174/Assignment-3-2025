@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat's World</title>
     <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-    </style>
-    <style>
-        .adlam-font{
-            font-family: "ADLaM Display", serif;
+        .ubuntu-regular {
+            font-family: "Ubuntu", serif;
             font-weight: 400;
             font-style: normal;
         }
@@ -32,52 +35,77 @@
 
 </head>
 
-<body class="adlam-font">
-    <header class="bg-[#FFF9F4] ">
-        <!-- nav section -->
-        <nav class="container mx-auto lg:border-none border-2 border-b-black">
-            <div class="navbar flex justify-between">
-                <div class="navbar-start">
+<body class="ubuntu-regular ">
+    <header class=" ">
+        <!-- nav section starts-->
+        <section class="bg-[#FFF9F4]">
+            <nav class="container mx-auto lg:border-none border-2 border-b-black">
+                <div class="navbar flex justify-between">
+                    <div class="navbar-start">
 
-                    <span class="mr-3"><img src="resources/logo-header.png" alt=""></span>
-                    <h2 class="text-4xl font-bold hidden lg:inline">Browse<span class="text-orange-300">4</span>Pets
-                    </h2>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-2xl font-serif">
-                        <li><a>Find a pet</a></li>
+                        <span class="mr-3"><img src="resources/logo-header.png" alt=""></span>
+                        <h2 class="text-4xl font-bold hidden lg:inline">Browse<span class="text-orange-300">4</span>Pets
+                        </h2>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-2xl font-serif">
+                            <li><a>Find a pet</a></li>
 
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end hidden lg:flex gap-3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-
-                    <a class="btn  btn-warning btn-outline px-9"><span class="text-gray-800">Login</span></a>
-                    <a class="btn btn-warning px-9">Register</a>
-
-                </div>
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end hidden lg:flex gap-3 ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                         </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+
+                        <a class="btn  btn-warning btn-outline px-9"><span class="text-gray-800">Login</span></a>
+                        <a class="btn btn-warning px-9">Register</a>
+
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
+        <!-- nav section ends -->
+
+        <!-- banner section starts -->
+        <section class=" lg:overflow-hidden mt-40">
+            <div class="hero container mx-auto ">
+                <div class=" hero-content flex-col-reverse md:flex-col-reverse ">
+                  <div class="lg:relative md:relative xl:absolute 2xl:absolute  lg:bottom-100 xl:top-20 xl:left-65 2xl:left-110">
+                    <img
+                    src="resources/cat-big.png "
+                    class="" />
+                  </div>
+                  <div class="relative lg:right-35 xl:right-65 xl:mt-20 2xl:right-100 ">
+                    <h1 class="lg:text-5xl text-3xl font-bold">Pamper Your Pet, Because They<br class="hidden lg:inline"> Deserve  the Best</h1>
+                    <p class="py-6">
+                        Discover a world of treats, toys, and essentials handpicked for <br class="hidden lg:inline"> your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="btn btn-warning px-9 animate-bounce">Find A Pet</button>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+        <!-- banner section ends -->
     </header>
 
 
