@@ -19,6 +19,7 @@
             font-style: normal;
         }
     </style>
+   
 
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -39,7 +40,7 @@
     <header class=" ">
         <!-- nav section starts-->
         <section class="bg-[#FFF9F4]">
-            <nav class="container mx-auto lg:border-none border-2 border-b-black">
+            <nav class="container mx-auto w-96 lg:w-full lg:border-none md:border-none border-b-2 border-b-black">
                 <div class="navbar flex justify-between">
                     <div class="navbar-start">
 
@@ -87,12 +88,13 @@
 
         <!-- banner section starts -->
 
-        <section class="container mx-auto  mt-20">
-            <div class="lg:h-[760px] 2xl:max-w-full  lg:bg-[url('resources/cat-big.png')] bg-contain bg-scroll  bg-no-repeat bg-right-bottom  ">
+        <section class="container mx-auto  mt-20 w-96 lg:w-full">
+            <div
+                class=" lg:h-[760px] 2xl:max-w-full  lg:bg-[url('resources/cat-big.png')] bg-contain bg-scroll  bg-no-repeat bg-right-bottom  ">
                 <div class="">
 
-                    <div class="py-5 space-y-2 relative lg:top-30 ">
-                        <h1 class="py-6 lg:text-5xl text-3xl font-bold ">Pamper Your Pet, Because They<br
+                    <div class=" py-5 space-y-2 relative lg:top-30 ">
+                        <h1 class="py-6 lg:text-6xl text-3xl font-bold ">Pamper Your Pet, Because They<br
                                 class="hidden lg:inline"> Deserve the Best</h1>
                         <p class="py-2">
                             Discover a world of treats, toys, and essentials handpicked for <br
@@ -100,10 +102,10 @@
                         </p>
                         <button class="btn btn-warning px-9 animate-bounce">Find A Pet</button>
                     </div>
-                    <div class="lg:hidden">
+                    <div class="lg:hidden relative bottom-5">
                         <img src="resources/cat-big.png" alt="">
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -113,59 +115,248 @@
 
     <main>
         <!-- browse by categories section starts -->
-        <section class="mt-20 container mx-auto">
+        <section class="mt-20 container mx-auto w-96 lg:w-full">
             <div class="mb-9 lg:mb-25">
-                <h1 class="text-center font-bold text-4xl ">Browse By Categories</h1>
+                <h1 class="text-center lg:text-left font-bold text-4xl lg:text-6xl">Browse By Categories</h1>
             </div>
-            <div class="w-96 mx-auto grid grid-cols-2 lg:grid-cols-6 lg:w-full gap-5 text-center">
+            <div
+                class="w-auto mx-auto grid grid-cols-2 md:grid-cols-2 md:w-96 lg:grid-cols-6 lg:w-full gap-5 text-center">
                 <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
-                        <img src="resources/dog-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
-                   
+
+                    <img src="resources/dog-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
+
                     <h3 class="font-semibold">Dog</h3>
                     <p>5 items</p>
                 </div>
                 <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
+
                     <img src="resources/fish-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
-               
-                <h3 class="font-semibold">Fish</h3>
-                <p>15 items</p>
-            </div>
-            <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
-                <img src="resources/cat-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
-           
-            <h3 class="font-semibold">Cat</h3>
-            <p>7 items</p>
-        </div>
-        <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
-            <img src="resources/bird-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
-       
-        <h3 class="font-semibold">Birds</h3>
-        <p>9 items</p>
-    </div>
-    <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
-        <img src="resources/mouse-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
-   
-    <h3 class="font-semibold">Small Pet</h3>
-    <p>8 items</p>
-</div>
-<div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
-                    
-    <img src="resources/rabbit-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
 
-<h3 class="font-semibold">Rabbit</h3>
-<p>Not Available</p>
-</div>
+                    <h3 class="font-semibold">Fish</h3>
+                    <p>15 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
 
-                
-                
+                    <img src="resources/cat-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
+
+                    <h3 class="font-semibold">Cat</h3>
+                    <p>7 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
+
+                    <img src="resources/bird-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
+
+                    <h3 class="font-semibold">Birds</h3>
+                    <p>9 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
+
+                    <img src="resources/mouse-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
+
+                    <h3 class="font-semibold">Small Pet</h3>
+                    <p>8 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-xl p-4 space-y-1">
+
+                    <img src="resources/rabbit-cartoon.png" alt="" class="rounded-full bg-white mx-auto p-5">
+
+                    <h3 class="font-semibold">Rabbit</h3>
+                    <p>Not Available</p>
+                </div>
+
+
+
             </div>
 
         </section>
+        <!-- browse by categories section ends -->
+
+
+        <!-- trending section starts -->
+        <section class="mt-30 bg-[#FFF9F4] py-30">
+
+            <div class="container mx-auto w-96 lg:w-full">
+                <h1 class="font-bold text-4xl lg:text-6xl pb-10 ">Trending Pet Products</h1>
+                <div class="grid lg:grid-cols-3   gap-4">
+                    <div class="  bg-[#F9DF8A] rounded-xl p-3  mx-auto lg:m-0">
+                        <h1 class="font-semibold text-2xl ml-5 mt-5">T-Shirt For Dogs</h1>
+                        <p class="my-4 mx-5 text-opacity-50">Discover a world of treats,toys and essentials handpicked
+                            for dogs</p>
+                        <div class="flex ">
+                            <button class="btn btn-white ml-4 px-6">Shop Now</button>
+                            <img src="resources/cute-pet-mid.png" alt=""
+                                class="w-1/2 lg:w-[180px] md:w-[150px] m-auto ">
+                        </div>
+                    </div>
+                    <div class="  grid grid-cols-2 lg:grid-cols-3 lg:col-span-2 lg:gap-4 gap-2">
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/dog-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/fish-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/bird-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/cat-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/bird-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/fish-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/fish-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class=" bg-white p-4 flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/dog-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+                        <div class="hidden bg-white p-4 lg:flex gap-5 rounded-lg">
+                            <div class="bg-[#FFF9F4] rounded-lg">
+                                <img src="resources/bird-cartoon.png" alt="" class=" p-4">
+                            </div>
+                            <div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-3" />4.5
+
+                                </div>
+                                <h4 class="font-semibold text-lg">Pet Bed</h4>
+
+                                <h4 class="font-semibold">$39.0</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- trending section ends -->
+        <!-- low price section starts -->
+        <section class="w-96 lg:w-full container mx-auto mt-20 ">
+            <h1 class="text-3xl lg:text-6xl font-bold mb-8 lg:mb-20">Everyday Low Price</h1>
+            
+            <div class=" flex flex-col lg:grid lg:grid-cols-5 gap-3">
+                <div style="background: linear-gradient(to right, #F7CCFB, #AFD2FD);" class="flex justify-center rounded-xl col-span-3">
+                    <div class="p-5 flex flex-col justify-center gap-1">
+                        <h6 class="hidden lg:inline text-lg">Under Price</h6>
+                        <h3 class="font-semibold text-3xl">Pembroke Welsh Corgi Breeds</h3>
+                        <p class="hidden lg:inline text-white text-2xl">(Easy Hair Removal)</p>
+                        <h2 class="font-bold text-2xl text-white lg:text-black">$7.99</h2>
+                    </div>
+                    <div>
+                        <img src="resources/cute-dog-mid.png" alt="" class="w-full">
+                    </div>
+                </div>
+                
+                <div style="background: linear-gradient(to right, #FFF9F4, #F9DF8A);" class="flex justify-center rounded-xl col-span-2 lg:pt-30">
+                    <div class="p-5 flex flex-col  gap-1">
+                        
+                        <h3 class="font-semibold text-3xl">Maltipoo Breeds</h3>
+                        
+                        <h2 class="font-bold text-2xl">$11.40</h2>
+                    </div>
+                    <div>
+                        <img src="resources/cute-pet-mid.png" alt="" class="w-1/2 lg:w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- low price section ends -->
     </main>
 
 
